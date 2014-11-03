@@ -156,6 +156,9 @@ var twitchy = function (opts) {
 	this.unblockUser = function (user, target, cb) {
 		_delete("users/" + user + "/blocks/" + target, _parsingCallback(cb));
 	};
+	this.userFollowsChannel = function (user, target, cb) {
+		_get("users/" + user + "/follows.channels/" + target, _assertingCallback(200, cb));
+	};
 
 	this.getChannel = function (name, cb) {
 		_get("channels/" + name, _assertingCallback(200, cb));
@@ -172,6 +175,10 @@ var twitchy = function (opts) {
 	};
 	this.unfollowChannel = function (user, channel, cb) {
 		_delete("users/" + user + "/follows/channels/" + channel, _parsingCallback(cb));
+	};
+
+	this.getStream = function (channel, cb) {
+		_get("streams/" + channel, _parsingCallback(cb));
 	};
 
 };
