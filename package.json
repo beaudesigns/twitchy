@@ -22,10 +22,10 @@
     "url": "https://github.com/telamon/twitchy/issues"
   },
   "dependencies": {
-    "oauth":"0.9.x",
-    "underscore" : "1.5.2",
-    "superagent" : "0.15.4",
-    "superagent-oauth" : "0.2.3"
+    "oauth":"^0.9.12",
+    "underscore" : "^1.7.0",
+    "superagent" : "^0.20.0",
+    "superagent-oauth" : "^0.2.3"
   },
   "devDependencies": {
     "mocha" : "*",
