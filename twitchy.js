@@ -157,7 +157,7 @@ var twitchy = function (opts) {
 		_delete("users/" + user + "/blocks/" + target, _parsingCallback(cb));
 	};
 	this.userFollowsChannel = function (user, target, cb) {
-		_get("users/" + user + "/follows.channels/" + target, _assertingCallback(200, cb));
+		_get("users/" + user + "/follows/channels/" + target, _assertingCallback(200, cb));
 	};
 
 	this.getChannel = function (name, cb) {
