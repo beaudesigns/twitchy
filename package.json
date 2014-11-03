@@ -1,11 +1,11 @@
 {
   "name": "twitchy",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "TwitchTV API library",
   "main": "twitchy.js",
   "scripts": {
     "test": "mocha --reporter spec --timeout 60000",
-    "debug" : "mocha debug --reporter spec --timeout 60000"
+    "debug": "mocha debug --reporter spec --timeout 60000"
   },
   "repository": {
     "type": "git",
@@ -22,13 +22,13 @@
     "url": "https://github.com/telamon/twitchy/issues"
   },
   "dependencies": {
-    "oauth":"^0.9.12",
-    "underscore" : "^1.7.0",
-    "superagent" : "^0.20.0",
-    "superagent-oauth" : "^0.2.3"
+    "oauth": "^0.9.12",
+    "underscore": "^1.7.0",
+    "superagent": "^0.20.0",
+    "superagent-oauth": "^0.2.3"
   },
   "devDependencies": {
-    "mocha" : "*",
-    "should" : "*"
+    "mocha": "*",
+    "should": "*"
   }
 }
