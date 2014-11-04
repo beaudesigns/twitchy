@@ -178,7 +178,7 @@ var twitchy = function (opts) {
 	};
 
 	this.getStream = function (channel, cb) {
-		_get("streams/" + channel, _parsingCallback(cb));
+		_get("streams/" + channel, _assertingCallback(200, cb));
 	};
 
 };
