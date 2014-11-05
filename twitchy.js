@@ -132,7 +132,7 @@ var twitchy = function (opts) {
 				assert.equal(res.status, expectedStatus, res.body ? JSON.stringify(res.body) : res.status);
 				cb && cb(err, res.body);
 			} catch (e) {
-				e.status = "Got " + res.status + " expected " + expectedStatus;
+				e.status = "Got " + (res.status ? res.status : 'null') + " expected " + expectedStatus;
 				cb && cb(e);
 			}
 		}
